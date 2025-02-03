@@ -1691,3 +1691,112 @@ aside.cyberpunk a:after {
 .cyberpunk.black ul.steps li.current:after {
   background-color: var(--yellow-color);
 }
+
+/* FOR NORMAL SOCIAL BUTTONS BY FAHAD */
+/* .github-section:after {
+  content: none !important;
+}
+
+.github-section *:after {
+  animation: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+} */
+
+/* MAKE NAVBAR STICK BY FAHAD */
+nav.cyberpunk {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  background: var(--black-color) !important;
+  box-shadow: 0 0 20px var(--yellow-color);
+  margin: 0 !important;
+  padding: 15px 0 !important;
+}
+
+nav.cyberpunk:before {
+  content: none !important;
+}
+
+section.cyberpunk {
+  margin-top: 0 !important;
+  padding-top: 100px !important;
+}
+
+/* REMOVE THE WEIRD POLYGONS FROM SOCIAL BUTTONS BY FAHAD */
+button.cyberpunk img {
+  padding: 0 !important;
+  clip-path: none !important;
+  background-color: transparent !important;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+/* USE RELEVANT BUTTON COLORS BY FAHAD */
+button.cyberpunk.github {
+  --background-color: #181717; /* GitHub black */
+  --border-color: #8b949e; /* GitHub grey */
+}
+
+button.cyberpunk.linkedin {
+  --background-color: #0a66c2; /* LinkedIn blue */
+  --border-color: #70b5f9; /* LinkedIn light blue */
+}
+
+button.cyberpunk.discord {
+  --background-color: #5865f2; /* Discord blurple */
+  --border-color: #a4b5f8; /* Discord light purple */
+}
+
+/* FIX POLYGON CLASHING BY FAHAD */
+section.cyberpunk:has(button.cyberpunk) {
+  margin-top: -80px !important;
+  position: relative;
+  z-index: 2;
+  padding-top: 40px !important;
+  min-height: unset !important;
+  padding-bottom: 400px !important;
+}
+
+/* Flatten hero section bottom */
+section.cyberpunk.black:first-of-type::after {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+  height: 20px !important;
+}
+
+/* Flatten button section top */
+section.cyberpunk:has(button.cyberpunk)::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+  height: 20px !important;
+  top: -20px !important;
+}
+
+/* Adjust positioning */
+section.cyberpunk.black:first-of-type {
+  padding-bottom: 80px !important;
+}
+
+section.cyberpunk:has(button.cyberpunk) {
+  margin-top: -40px !important;
+  z-index: 2;
+}
+
+/* Hero section bottom border */
+section.cyberpunk.black:first-of-type::after {
+  background-color: var(--yellow-color) !important;
+  height: 20px !important;
+  bottom: -10px !important;
+}
+
+/* Button section top border */
+section.cyberpunk:has(button.cyberpunk)::before {
+  display: none !important;
+}
+
+/* Adjust positioning */
+section.cyberpunk:has(button.cyberpunk) {
+  margin-top: -30px !important;
+  padding-top: 10px !important;
+}

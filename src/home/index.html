@@ -9,17 +9,19 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<header style="background-color: #000; height: 50px; text-align: center;">
-  <nav style="display: flex; justify-content: center; gap: 30px; align-items: center; height: 100%;">
-    <span style="color: #f9f002; font-size: 2rem; margin-right: 40px;">Fahad Bin Hussain</span>
-    <a href="#about" class="cyberpunk" style="color: #f9f002; font-size: 1.2rem;">About</a>
-    <a href="#portfolio" class="cyberpunk" style="color: #f9f002; font-size: 1.2rem;">Portfolio</a>
-    <a href="#resume" class="cyberpunk" style="color: #f9f002; font-size: 1.2rem;">Resume</a>
-    <a href="#blog" class="cyberpunk" style="color: #f9f002; font-size: 1.2rem;">Blog</a>
-    <a href="#contact" class="cyberpunk" style="color: #f9f002; font-size: 1.2rem;">Contact</a>
-    <a href="#resources" class="cyberpunk" style="color: #f9f002; font-size: 1.2rem;">Resources</a>
-  </nav>
-</header>
+<nav class="cyberpunk" style="position: fixed; top: 0; width: 100%; z-index: 9999;">
+  <div style="display: flex; justify-content: space-between; align-items: center; height: 100%; padding: 0 50px;">
+    <span style="color: #f9f002; font-size: 2rem;">Fahad Bin Hussain</span>
+    <div style="display: flex; gap: 30px;">
+      <a href="#about" style="color: #f9f002; font-size: 1.2rem; text-decoration: none;">About</a>
+      <a href="#portfolio" style="color: #f9f002; font-size: 1.2rem; text-decoration: none;">Portfolio</a>
+      <a href="#resume" style="color: #f9f002; font-size: 1.2rem; text-decoration: none;">Resume</a>
+      <a href="#blog" style="color: #f9f002; font-size: 1.2rem; text-decoration: none;">Blog</a>
+      <a href="#contact" style="color: #f9f002; font-size: 1.2rem; text-decoration: none;">Contact</a>
+      <a href="#resources" style="color: #f9f002; font-size: 1.2rem; text-decoration: none;">Resources</a>
+    </div>
+  </div>
+</nav>
 
 <section class="cyberpunk">
   <div style="display: flex; align-items: center; gap: 100px; justify-content: flex-start; margin-left: 50px;">
@@ -35,24 +37,63 @@
       ">
     </div>
     <!-- <img class="cyberpunk dotted" src="https://dummyimage.com/600x400/ff00ff/fff" alt="" /> -->
-    <div style="text-align: center; margin-left: 300px; flex-shrink: 0; width: 50%;">
-    <h1 class="cyberpunk glitched" style="font-size: 3rem !important;">Fahad Bin Hussain</h1>
-    <h2 class="cyberpunk glitched" style="margin-top: 5px; font-size: 2rem !important;">Premium Software Developer</h2>
-    <h3 class="cyberpunk glitched" style="margin-top: 5px; font-size: 2rem !important;">Python, JavaScript, TypeScript</h2>
-    <h3 class="cyberpunk glitched" style="margin-top: 5px; font-size: 2rem !important;">Pioneering AI for Dystopian Apps</h2>
+    <div style="text-align: center; margin-left: 250px; flex-shrink: 0; width: 50%;">
+      <h1 class="cyberpunk glitched" style="font-size: 3rem !important;">Fahad Bin Hussain</h1>
+      <h2 class="cyberpunk glitched" style="margin-top: 5px; font-size: 2rem !important;">Premium Software Developer</h2>
+      <h3 class="cyberpunk glitched" style="margin-top: 5px; font-size: 2rem !important;">Python, JavaScript, TypeScript</h2>
+      <h3 class="cyberpunk glitched" style="margin-top: 5px; font-size: 2rem !important;">Pioneering AI for Dystopian Apps</h2>
     </div>
-  </div>
-  <div>
-    
   </div>
 </section>
 
-<!-- <section class="cyberpunk">
-  <a class="cyberpunk">Link red_</a>
-  <button class="cyberpunk green">Button green_</button>
-  <a class="cyberpunk purple">Link purple_</a>
-  <button class="cyberpunk blue">Button blue_</button>
-</section> -->
+<section class="cyberpunk" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+  <button class="cyberpunk github" onclick="window.location.href='https://github.com/FahadBinHussain'">
+    <img src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/svgs/brands/github.svg" 
+         style="width: 30px; filter: brightness(0) invert(1); margin-right: 10px;">
+    GITHUB_
+  </button>
+  
+  <button class="cyberpunk linkedin" onclick="window.location.href='https://www.linkedin.com/in/fahadbinhussain/'">
+    <img src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/svgs/brands/linkedin.svg" 
+         style="width: 30px; filter: brightness(0) invert(1); margin-right: 10px;">
+    LINKEDIN_
+  </button>
+  
+  <button class="cyberpunk discord" onclick="window.location.href='https://discordapp.com/users/905721002577789009'">
+    <img src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/svgs/brands/discord.svg" 
+         style="width: 30px; filter: brightness(0) invert(1); margin-right: 10px;">
+    DISCORD_
+  </button>
+</section>
+
+<!-- GitHub Link -->
+<!-- LinkedIn Link -->
+<!-- Discord Link -->
+<!-- <div class="github-section" style="position: relative; overflow: hidden;">
+  <div style="display: flex; justify-content: center; gap: 40px; margin: 40px 0; position: relative; z-index: 2;">
+    
+    <a href="https://github.com/yourusername" target="_blank" 
+       style="display: inline-flex; align-items: center; gap: 15px; text-decoration: none; padding: 15px 30px; border: 2px solid #f9f002; background: #000;">
+      <img src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/svgs/brands/github.svg" 
+           style="width: 30px; height: 30px; filter: invert(89%) sepia(99%) saturate(7499%) hue-rotate(358deg) brightness(99%) contrast(99%);">
+      <span style="color: #f9f002; font-size: 1.2rem; font-family: Arial, sans-serif; letter-spacing: 2px;">GITHUB</span>
+    </a>
+
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" 
+       style="display: inline-flex; align-items: center; gap: 15px; text-decoration: none; padding: 15px 30px; border: 2px solid #f9f002; background: #000;">
+      <img src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/svgs/brands/linkedin.svg" 
+           style="width: 30px; height: 30px; filter: invert(89%) sepia(99%) saturate(7499%) hue-rotate(358deg) brightness(99%) contrast(99%);">
+      <span style="color: #f9f002; font-size: 1.2rem; font-family: Arial, sans-serif; letter-spacing: 2px;">LINKEDIN</span>
+    </a>
+    
+    <a href="https://discord.com/users/yourid" target="_blank" 
+       style="display: inline-flex; align-items: center; gap: 15px; text-decoration: none; padding: 15px 30px; border: 2px solid #f9f002; background: #000;">
+      <img src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/svgs/brands/discord.svg" 
+           style="width: 30px; height: 30px; filter: invert(89%) sepia(99%) saturate(7499%) hue-rotate(358deg) brightness(99%) contrast(99%);">
+      <span style="color: #f9f002; font-size: 1.2rem; font-family: Arial, sans-serif; letter-spacing: 2px;">DISCORD</span>
+    </a>
+  </div>
+</div> -->
 
 <!-- <section class="cyberpunk black both">
   <h1 class="cyberpunk">H1 title</h1>
