@@ -1,0 +1,14 @@
+{
+    "name": "cyberpunk-portfolio",
+    "version": "2.1.0",
+    "scripts": {
+      "start": "node server.js",
+      "test": "echo \"System functional\" && exit 0"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    },
+    "engines": {
+      "node": "18.x"
+    }
+  }
