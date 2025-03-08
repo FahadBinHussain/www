@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cyberpunk Blog | Fahad Bin Hussain</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;500;600;700&amp;display=swap"'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=VT323&amp;display=swap'>
+  <link rel="stylesheet" href="/home/style.css">
+  <style>
+    .blog-post {
+      margin-bottom: 60px;
+      padding: 20px;
+      border: 1px solid rgba(249, 240, 2, 0.2);
+      background: rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+    
+    .blog-post:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: var(--yellow-color);
+    }
+    
+    .blog-post:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      background-color: var(--yellow-color);
+    }
+    
+    .blog-date {
+      color: var(--yellow-color);
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      opacity: 0.8;
+    }
+    
+    .blog-content {
+      color: #ccc;
+      line-height: 1.6;
+    }
+    
+    .blog-content strong {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="cyberpunk" style="position: fixed; top: 0; width: 100%; z-index: 9999;">
+    <div style="display: flex; justify-content: space-between; align-items: center; height: 100%; padding: 0 50px;">
+      <a href="/home" style="color: #f9f002; font-size: 2rem; text-decoration: none;">Fahad Bin Hussain</a>
+      <div style="display: flex; gap: 30px;">
+        <a href="/home#about" style="color: #f9f002; font-size: 1.2rem; text-decoration: none;">About</a>
+        <a href="/home#portfolio" style="color: #f9f002; font-size: 1.2rem; text-decoration: none;">Portfolio</a>
+        <a href="/home#resume" style="color: #f9f002; font-size: 1.2rem; text-decoration: none;">Resume</a>
+        <a href="/blog" style="color: #f9f002; font-size: 1.2rem; text-decoration: none; border-bottom: 2px solid #f9f002;">Blog</a>
+        <a href="/home#contact" style="color: #f9f002; font-size: 1.2rem; text-decoration: none;">Contact</a>
+        <a href="/home#resources" style="color: #f9f002; font-size: 1.2rem; text-decoration: none;">Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <section class="cyberpunk black" style="margin-top: 50px; padding: 40px 20px;">
+    <h1 class="cyberpunk glitched">BLOG_</h1>
+    <p class="cyberpunk inverse" style="max-width: 800px; margin: 30px auto;">
+      Welcome to my digital thought stream. Here I document my explorations of technology, AI, and the digital frontier.
+    </p>
+  </section>
+
+  <!-- Blog Posts -->
+  <section class="cyberpunk black" style="padding: 40px 20px;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      
+      <!-- Blog Post 1 -->
+      <div class="blog-post">
+        <h2 class="cyberpunk glitched">Interesting Dall-E Prompts</h2>
+        <p class="blog-date">Thursday, June 30, 2022</p>
+        <div class="blog-content">
+          <p>
+            I’ve been playing around with DALL·E Mega on Google Colab, and some of the coolest prompts I’ve tried are cyberpunk/computer brain, astronauts flying through a cyberpunk city, Eiffel Tower in a cyberpunk world, retro astronaut, cyberpunk alien, and alien in a neon-lit city. The results are insane—definitely worth trying if you’re into futuristic, sci-fi vibes!
+          </p>
+        </div>
+      </div>
+      
+      <!-- Blog Post 2 -->
+      <div class="blog-post">
+        <h2 class="cyberpunk glitched">Test</h2>
+        <p class="blog-date">Sunday, January 23, 2022</p>
+        <div class="blog-content">
+          <p><strong>Hello</strong>, World</p>
+        </div>
+      </div>
+      
+      <!-- Blog Post 3 -->
+      <div class="blog-post class="glitched"">
+        <h2 class="cyberpunk glitched">CS50 Hidden Message</h2>
+        <p class="blog-date">Wednesday, August 18, 2021</p>
+        <div class="blog-content">
+          <p>
+            I was always wondering if there was a hidden message in the lights at the front of the stage in CS50. 
+            In Week 8 of CS50, I finally decided to decrypt the lights.
+          </p>
+          <p>The lights convert to: <span style="font-family: 'VT323', monospace; color: #f9f002;">01000010010011110100111101001101001111010011110100111100100001</span></p>
+          <p>The binary converts to (in ASCII): <span style="font-family: 'VT323', monospace; background: rgba(249, 240, 2, 0.1); padding: 3px 8px;">BOOM==&lt;</span></p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="cyberpunk" style="text-align: center; padding: 30px;">
+    <p style="color: var(--black-color);">© 2101 Fahad Bin Hussain | All systems operational</p>
+  </section>
+
+  <script>
+    // Optional: Add any JavaScript you need
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Blog system loaded');
+    });
+  </script>
+</body>
+</html>

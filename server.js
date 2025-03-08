@@ -12,6 +12,9 @@ app.use('/home', express.static('src/home', { index: 'index.html' }));
 // Add error route
 app.use('/error', express.static('src/error'));
 
+// Serve blog under /blog path
+app.use('/blog', express.static('src/blog', { index: 'index.html' }));
+
 app.get('/health', (req, res) => {
   res.status(200).send('SYSTEM OPERATIONAL');
 });
